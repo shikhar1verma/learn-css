@@ -1,0 +1,32 @@
+/* Descendant combinator */
+div p {
+  /* Here all the p tags inside div tags are descandants 
+     Direct or indirect children of div
+  */
+  text-decoration: underline;
+}
+
+/* Child combinator */
+div > p {
+  /* Here p is the direct child of div */
+  /* The indirect children are not considered like 
+     p tags in section tags
+  */
+  color: green;
+}
+
+/* Adjacent sibling combinator */
+section + p {
+  /* Both elements should share same parent (section)
+     And p tag comes immediately after section tag. 
+  */
+  color: red;
+}
+
+/* General sibling combinator */
+code ~ p {
+  /* Both elements should share same parent (section)
+     Second element can be anywhere after the first element
+  */
+  color: blue;
+}

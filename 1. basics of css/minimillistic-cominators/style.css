@@ -1,0 +1,6 @@
+/* Descendant combinator */
+div p {
+  /* Here all the p tags inside div tags are descandants 
+     Direct or indirect children of div */
+  text-decoration: underline;
+}
